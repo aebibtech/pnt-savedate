@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paul & Trex Wedding</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="css/jquery.otg-carousel.css">
+        <script src="js/jquery.otg-carousel.js"></script>
+        <script src="anamorph.min.js"></script>
+        <script src="jquery.smartmenus.min.js"></script>
+        <script src="addons/bootstrap-4/jquery.smartmenus.bootstrap-4.min.js"></script>
+        <script src="addons/bootstrap/jquery.smartmenus.bootstrap.min.js"></script>
+        <script src="addons/keyboard/jquery.smartmenus.keyboard.min.js"></script>
+        <link rel="stylesheet" href="css/sm-core-css.css">
+        <link rel="stylesheet" href="css/sm-clean/sm-clean.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive">
+        <link rel="stylesheet" href="style.css">
+        <script>
+            $(document).ready(function () {
+                anamorph('https://www.youtube.com/embed/B6-H-70kH2Q', 0.1);
+                $('#main-menu').smartmenus();
+                var img = 'img/';
+                $('#carousel').carousel({
+                    images: [
+                        {src: img + '1.jpg', caption: '<h4>Prenup 1</h4>'},
+                        {src: img + '2.jpg', caption: '<h4>Prenup 2</h4>'},
+                        {src: img + '3.jpg', caption: '<h4>Prenup 3</h4>'},
+                        {src: img + '4.jpg', caption: '<h4>Prenup 4</h4>'},
+                        {src: img + '5.jpg', caption: '<h4>Prenup 5</h4>'},
+                        {src: img + '6.jpg', caption: '<h4>Prenup 6</h4>'}
+                    ]
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <nav>
+            <ul id="main-menu" class="sm sm-clean">
+                <li><a href="#">Paul and Trex Wedding</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#pics">Pictures</a></li>
+                <li><a href="#date">Save the Date</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Paul and Trex</h1>
+        </header>
+        <section id="story">
+            <h2>Our Story</h2>
+            <p>Our love story began at our meeting at Chowking Unciano on August 2017. We became friends. We got to know each other more. Eventually, we became a couple after six months. We met with our respective families. For our first year, we traveled together and ate a lot in places with magnificent views. For our succeeding years, we still travel and eat out a lot. We serve the church together through music. Finally, we got engaged on April 5, 2022. Now, we are going to face the next chapter of our lives together through marriage.</p>
+        </section>
+        <section id="pics">
+            <h2>Pictures</h2>
+            <div id="carousel"></div>
+        </section>
+        <section id="date">
+            <h2>Save the Date</h2>
+            <h3 class="d">2.19.23</h3>
+            <p>Ceremony Venue</p>
+            <p class="venue">Hope Christian Fellowship - Antipolo</p>
+            <p class="addr">Amb. F. Neri Ave., Blue Mountains, Sta. Cruz, Antipolo City</p>
+            <p>Reception Venue</p>
+            <p class="venue">The Garden Hive Events Place</p>
+            <p class="addr">M.L. Quezon Ext., Lores Country Homes, San Roque, Antipolo City</p>
+        </section>
+    </body>
+</html>
